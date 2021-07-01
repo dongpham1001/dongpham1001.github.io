@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Checkout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="fixed-top">
+        <header class="container-fluid">
+            <div class="row">
+                <!--Menu-->
+                <div class="menu col-12 col-sm-12 col-lg-6 border-bottom">
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img-home/logo.png">
+                        </a>
+                        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a type="button" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                            Shop
+                                        </a>
+                                        <div class="dropdown-menu p-0 m-0">
+                                            <a class="dropdown-item" href="shop.html">all</a>
+                                            <a class="dropdown-item" href="shop.html">shirts</a>
+                                            <a class="dropdown-item" href="shop.html">jeans</a>
+                                            <a class="dropdown-item" href="shop.html">hoodies</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!--Header Menu-->
+                <div class="header-menu col-12 col-sm-12 col-lg-6 p-0 d-flex justify-content-end align-items-center border-bottom">
+                    <div class="search-area d-flex justify-content-end">
+                        <button class="px-2" type="submit">
+                            <img src="https://img.icons8.com/ios/15/000000/search--v1.png" alt="search">
+                        </button>
+                        <input type="search" name="search" placeholder="Type for search">
+                    </div>
+                    <div class="favourite-area border-left">
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios/20/000000/like.png" alt="favourite">
+                        </a>
+                    </div>
+                    <div class="favourite-area border-left">
+                        <a href="#">
+                            <img src="https://img.icons8.com/windows/20/000000/person-male.png" alt="user">
+                        </a>
+                    </div>
+                    <div class="favourite-area border-left">
+                        <a href="cart.html">
+                            <img src="https://img.icons8.com/ios/20/000000/shopping-bag.png" alt="cart">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--Checkout-->
+    <article class="title" style="background-image: url('img-home/bg-shop.jpg');">
+        <div  class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <h2 class="text-center text-uppercase">checkout</h2>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--Content-->
+    <article class="container main-section">
+        <div class="row">
+            <!--Form-->
+            <div class="info-box col-12 col-md-6">
+                <div>
+                    <h6>Billing Address</h6>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>FIRST NAME:</label>
+                            <input type="text" class="form-control" name="text">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>LAST NAME:</label>
+                            <input type="text" class="form-control" name="text">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label>COUNTRY:</label>
+                            <select class="form-control mb-3 no-required">
+                                <option>US</option>
+                                <option>Germany</option>
+                                <option>India</option>
+                                <option>Vietnam</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label>ADDRESS:</label>
+                            <input type="text" class="form-control mb-3" name="text" placeholder="No., Street">
+                            <input type="text" class="form-control mb-3" name="text" placeholder="Ward">
+                            <input type="text" class="form-control mb-3" name="text" placeholder="District">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label>POSTCODE:</label>
+                            <input type="text" class="form-control mb-3" name="text">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label>PHONE NO:</label>
+                            <input type="number" class="form-control mb-3" name="text">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label>EMAIL:</label>
+                            <input type="email" class="form-control mb-4" name="text" id="email">
+                        </div>
+                        <div class="col-12">
+                            <div class=checkbox>
+                                <label class="form-check-label text-uppercase">
+                                    <input type="checkbox" class="form-check-input">terms and conditions
+                                </label>
+                            </div>
+                            <div class=checkbox>
+                                <label class="form-check-label text-uppercase">
+                                    <input type="checkbox" class="form-check-input">create an account
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--Place order-->
+            <div class="col-12 col-md-6 col-lg-5 ml-lg-auto">
+                <div class="order-box shadow border">
+                    <h6>Your Order</h6>
+                    <span class="text-secondary">The Details</span>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center mb-3 text-uppercase">
+                            product
+                            <span class="badge">Total</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center mb-3 text-uppercase">
+                            name product
+                            <span class="badge">$ 80.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center mb-3 text-uppercase">
+                            subtotal
+                            <span class="badge">$ 80.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center mb-3 text-uppercase">
+                            shipping
+                            <span class="badge">Free</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center mb-4 text-uppercase">
+                            total
+                            <span class="badge">$ 80.00</span>
+                        </li>
+                    </ul>
+                    <div class="cart-box mt-5">
+                        <button type="button" class="btn btn-primary btn-lg text-uppercase">place order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="d-flex mb-4">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="brand-img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="footer-menu">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="shop.html">shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="footer-widget-menu mb-4">
+                        <ul class="d-flex flex-wrap pl-0">
+                            <li>
+                                <a href="#">order status</a>
+                            </li>
+                            <li>
+                                <a href="#">shipping and delivery</a>
+                            </li>
+                            <li>
+                                <a href="#">privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#">payment options</a>
+                            </li>
+                            <li>
+                                <a href="#">guides</a>
+                            </li>
+                            <li>
+                                <a href="#">terms of use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="footer-heading">
+                        <h6 class="text-light text-uppercase">subscribe</h6>
+                    </div>
+                    <div class="subscribtion-form">
+                        <form>
+                            <input type="email" name="mail" placeholder="Your email here">
+                            <button type="submit" class="btn btn-outline-light">
+                                <a href="mailto:pnminhdong@gmail.com">Send</a>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="footer-social-area">
+                        <a href="#">
+                            <img src="https://img.icons8.com/plasticine/24/000000/facebook-f.png" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios/24/000000/instagram-new.png" alt="instagram">
+                        </a>
+                        <a href="#">
+                            <img src="https://img.icons8.com/ios/24/000000/twitter.png" alt="twitter">
+                        </a>
+                        <a href="#">
+                            <img src="https://img.icons8.com/dotty/24/000000/youtube-play.png" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

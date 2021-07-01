@@ -1,0 +1,31 @@
+@charset "UTF-8";
+* {box-sizing: border-box;}
+body {background: linear-gradient(to right, rgb(240, 97, 97), rgb(138, 112, 230));}
+table {border: solid black 1px;}
+th {
+    padding: 0px;
+    width: 400px;
+}
+#calculating {
+    font-size: 28px;
+    color: gray;
+}
+th input {
+    height: 50px;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 35px;
+    border: none;
+    outline: none;
+    text-align: end;
+}
+td {
+    padding: 5px;
+    width: 25%;
+    height: 70px;
+    background-color: rgb(59, 59, 59);
+}
+button {
+    width: 100%;
+    height: 90%;
+}

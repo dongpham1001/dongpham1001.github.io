@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 class="text-center">Calculator</h1>
+    <article class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div>
+                <table class="text-center">
+                    <tr>
+                        <th colspan="4">
+                            <input id="calculating" type="text" value=" " readonly>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">
+                            <input id="result" type="text" value="0" readonly>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><button value="ac" class="btn btn-outline-warning" onclick="clearAll()">AC</button></td>
+                        <td><button value="%" class="btn btn-outline-warning operator">%</button></td>
+                        <td><button value="del" class="btn btn-outline-warning" onclick="del()">Del</button></td>
+                        <td><button value="/" class="btn btn-outline-warning" onclick="operatorInput(this)">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button value="7" class="btn btn-outline-primary" onclick="numberInput(this)">7</button></td>
+                        <td><button value="8" class="btn btn-outline-primary" onclick="numberInput(this)">8</button></td>
+                        <td><button value="9" class="btn btn-outline-primary" onclick="numberInput(this)">9</button></td>
+                        <td><button value="*" class="btn btn-outline-warning" onclick="operatorInput(this)">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button value="4" class="btn btn-outline-primary" onclick="numberInput(this)">4</button></td>
+                        <td><button value="5" class="btn btn-outline-primary" onclick="numberInput(this)">5</button></td>
+                        <td><button value="6" class="btn btn-outline-primary" onclick="numberInput(this)">6</button></td>
+                        <td><button value="-" class="btn btn-outline-warning" onclick="operatorInput(this)">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button value="1" class="btn btn-outline-primary" onclick="numberInput(this)">1</button></td>
+                        <td><button value="2" class="btn btn-outline-primary" onclick="numberInput(this)">2</button></td>
+                        <td><button value="3" class="btn btn-outline-primary" onclick="numberInput(this)">3</button></td>
+                        <td><button value="+" class="btn btn-outline-warning" onclick="operatorInput(this)">+</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button value="0" class="btn btn-outline-primary" onclick="numberInput(this)">0</button>
+                        </td>
+                        <td><button value="." class="btn btn-outline-primary" onclick="numberInput(this)">.</button></td>
+                        <td><button value="=" class="btn btn-outline-warning" onclick="operatorInput(this)">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </article>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
