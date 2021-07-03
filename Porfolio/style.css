@@ -404,10 +404,6 @@ footer a {
     height: 100%;
     font-size: 40px;
     text-align: center;
-    color: #111;
-  }
-  .up-button a:hover {
-    color: #f0ebcc;
   }
   /*Layout*/
   .container {
