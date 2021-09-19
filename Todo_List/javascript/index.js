@@ -12,7 +12,7 @@ if (data) {
 let render = function() {
     localStorage.setItem("toDoList", JSON.stringify(toDoList));
     let convertList = toDoList.map(function(item, index) {
-        return "<li> <div><input type='checkbox'></div> <input type='text' class='todo-item' disabled value='" + item + "'> <ion-icon name='pencil-outline' class='buttons edit-buttons' data-id='" + index + "'></ion-icon> <ion-icon name='trash-outline' class='buttons del-buttons' data-id='" + index + "'></ion-icon> </li>"
+        return "<li> <div><input type='checkbox'></div> <input type='text' class='todo-item' readonly value='" + item + "'> <ion-icon name='pencil-outline' class='buttons edit-buttons' data-id='" + index + "'></ion-icon> <ion-icon name='trash-outline' class='buttons del-buttons' data-id='" + index + "'></ion-icon> </li>"
     })
     let content = convertList.join("");
     htmlList.innerHTML = content;
@@ -57,11 +57,11 @@ let getDelButtons = function() {
 let editItem = function() {
     let toDoItem = document.querySelectorAll(".todo-item");
     let j = this.dataset.id;
-    toDoItem[j].removeAttribute("disabled");
+    toDoItem[j].removeAttribute("readonly");
     toDoItem[j].focus();
     toDoItem[j].addEventListener("focusout", function() {
         toDoList.splice(j, 1, toDoItem[j].value);
-        toDoItem[j].classList.add("disabled");
+        toDoItem[j].classList.add("readonly");
         render();
     })
 }
