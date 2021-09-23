@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <link rel="icon" type="image" href="../img/favicon.ico" />
+    <!-- Bootstap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/base.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container p-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="../img/eDiGi-logo-4.png" alt="icon" />
+            </a>
+            <div class="collapse navbar-collapse text-lg-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SẢN PHẨM
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">iPhone</a>
+                            <a class="dropdown-item" href="#">iPad</a>
+                            <a class="dropdown-item" href="#">iPod</a>
+                            <a class="dropdown-item" href="#">Mac</a>
+                            <a class="dropdown-item" href="#">Apple Watch</a>
+                            <a class="dropdown-item" href="#">Apple TV</a>
+                            <a class="dropdown-item" href="#">AppleCare</a>
+                            <a class="dropdown-item" href="#">Phụ kiện</a>
+                            <a class="dropdown-item" href="#">A.I.Robot</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">THÀNH VIÊN</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            KHÁM PHÁ
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tin tức</a>
+                            <a class="dropdown-item" href="#">Khuyến mãi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle m-0" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            VỀ eDiGi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Câu chuyện của eDiGi</a>
+                            <a class="dropdown-item" href="#">Cửa hàng của eDiGi</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-contain d-flex justify-content-center">
+                <div class="d-none d-lg-block log-in">
+                    <a class="nav-link d-inline-block px-0" href="#">Đăng nhập</a>
+                    <span class="text-white">|</span>
+                    <a class="nav-link d-inline-block px-0" href="#">Đăng ký</a>
+                </div>
+                <div class="cart">
+                    <a href="#" class="nav-link text-white">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>1</span>
+                    </a>
+                </div>
+                <div class="language d-none d-lg-block">
+                    <div class="form-group m-0">
+                        <select class="form-control py-0 px-1" id="exampleFormControlSelect1">
+                            <option>VI</option>
+                            <option>EN</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Carousel -->
+    <section id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-touch="true">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="3000">
+                <img src="../img/carousel/slider-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="#" class="btn btn-light d-block">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carousel/slider-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>iPhone 12</h5>
+                    <p>Blast past fast</p>
+                    <div class="d-flex flex-column justify-content-between">
+                        <a href="#"><button type="button" class="btn btn-outline-light">Mua ngay</button></a>
+                        <a href="#"><button type="button" class="btn btn-outline-light">Tìm hiểu thêm</button></a>
+                    </div>
+                    <a href="#" class="d-inline-block">Xem video >></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carousel/slider-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Apple Watch Series 6</h5>
+                    <p>The future of health is on your wrist</p>
+                    <a href="#"><button type="button" class="btn btn-outline-light">Mua ngay</button></a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h2 class="display-5 font-weight-bold text-uppercase">Chào mừng đến với eDiGi</h2>
+            <p class="lead">Your Trusted Apple Expert</p>
+            <p>eDiGi là cửa hàng ủy quyền của Apple đạt tiêu chuẩn APR (Apple Premium Reseller) tại Việt Nam. Đến với
+                eDiGi,
+                khách hàng sẽ được trải nghiệm không gian mua sắm công nghệ đẳng cấp rộng 250 m² với đầy đủ các dòng sản
+                phẩm chính hãng mới nhất.</p>
+        </div>
+    </section>
+    <!-- Category -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 category-caption text-center">
+                        <p>iPhone</p>
+                        <a href="#">Xem tất cả -></a>
+                    </div>
+                    <div class="col-12">
+                        <a href="#"><img class="img-fluid" src="../img/Category/image-1.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-4 category-caption text-center">
+                        <p>iPad</p>
+                        <a href="#">Xem tất cả -></a>
+                    </div>
+                    <div class="col-8">
+                        <a href="#"><img class="img-fluid" src="../img/Category/image-2.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="#"><img class="img-fluid" src="../img/Category/image-3.png" alt=""></a>
+                            </div>
+                            <div class="col-12 category-caption text-center">
+                                <p>Mac</p>
+                                <a href="#">Xem tất cả -></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <div class="col-6 category-caption text-center">
+                                <p>Apple Watch</p>
+                                <a href="#">Xem tất cả -></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img class="img-fluid" src="../img/Category/image-4.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <div class="col-12 category-caption text-center ">
+                                <p>Phụ kiện Apple</p>
+                                <a href="#">Xem tất cả -></a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#"><img class="img-fluid" src="../img/Category/image-5.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Workshop -->
+    <section class="container-fluid mb-5 p-0 position-relative">
+        <img src="../img/workshop.jpg" alt="" class="img-fluid">
+        <div class="workshop-content position-absolute">
+            <h2 class="display-4 font-weight-bold">eDiGi WORKSHOP</h2>
+            <h2>Trải nghiệm Workshop </h2>
+            <h2> cùng chuyên gia Apple</h2>
+            <a href="#" class="btn btn-outline-light">Xem Thêm</a>
+        </div>
+    </section>
+    <!-- Latest News -->
+    <section class="container mb-5">
+        <h2 class="display-5 font-weight-bold text-uppercase text-center text-md-left">Lastest news</h2>
+        <div class="card-deck">
+            <a href="#" class="card">
+                <img src="../img/lastest_news/image-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-uppercase">Top 5 phụ kiện không thể thiếu mùa du lịch</h5>
+                    <p class="card-text">Mùa hè – mùa du lịch đã đến. Trong thời đại công nghệ hiện nay, chuyến du lịch
+                        của bạn sẽ trở nên</p>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <img src="../img/lastest_news/image-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-uppercase">Macbook Air 2020</h5>
+                    <p class="card-text">Bên cạnh việc ra mắt iPad Pro 2020, Apple cũng vừa trình làng chiếc MacBook Air
+                        mới, chiếc máy tính</p>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <img src="../img/lastest_news/image-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-uppercase">Ipad pro 2020 – Nhanh, mạnh, chụp ảnh tốt như máy ảnh chuyên
+                        nghiệp</h5>
+                    <p class="card-text">Sự nâng cấp đáng giá sau hai năm Bắt đầu được giới thiệu từ lần đầu vào năm
+                        2015, iPad Pro là dòng</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Registration -->
+    <section class="container-fluid registration">
+        <div class="row">
+            <div class="col-sm-12 col-lg-8 text-sm-center text-lg-left">
+                <h2 class="display-5 text-uppercase">Đăng ký nhận tin khuyến mãi từ</h2>
+                <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn!!!</p>
+                <div class="input-group mb-3">
+                    <input type="text" placeholder="Địa chỉ email của bạn..." aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-outline-primary">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4">
+                <div id="logo-footer">
+                    <img src="../img/logo-footer.png" alt="logo-footer">
+                </div>
+                <p class="font-weight-bold">eDiGi - Apple Premium Reseller</p>
+                <p>Địa chỉ: 02 Công Xã Paris, P. Bến Nghé, Q.1, TP.HCM</p>
+                <p>Điện thoại: +84 (28) 36 22 6996</p>
+                <p>E-mail: <a href="mailto:info@edigi.com.vn">info@edigi.com.vn</a></p>
+            </div>
+            <div class="col-sm-12 col-lg-2">
+                <h3>eDigi</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Workshop</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <h3>Chăm sóc khách hàng</h3>
+                <p>Hotline <a class="d-block" href="tel:0886515253">0886 51 52 53</a> </p>
+                <p>09:00 - 21:00 <br> (Từ Thứ 2 đến Chủ Nhật, lễ tết nghỉ)</p>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <h3>Connect with eDiGi</h3>
+                <p>Hàng ngàn sản phẩm và chương trình siêu hấp dẫn từ eDigi đang đợi bạn. Đăng ký nhận tin ngay!</p>
+                <input type="text" placeholder="Địa chỉ email của bạn...">
+                <div id="social-icon">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <!-- My JS -->
+    <script type="text/javascript" src="../javascript/index.js"></script>
+</body>
+
+</html>
